@@ -28,9 +28,10 @@ navbar-links:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
   #   - GitHub Pages: "https://pages.github.com/"
-  Twitter Profile: "https://twitter.com/rhynorater"
-  HackerOne Profile: "https://hackerone.com/rhynorater"
-  BugCrowd Profile: "https://bugcrowd.com/rhynorater"
+  Profiles: 
+      - Twitter Profile: "https://twitter.com/rhynorater"
+      - HackerOne Profile: "https://hackerone.com/rhynorater"
+      - BugCrowd Profile: "https://bugcrowd.com/rhynorater"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
