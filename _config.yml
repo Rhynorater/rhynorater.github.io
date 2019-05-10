@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Rhynorater's Blog
+title: Rhynorater's InfoSec Blog
 
 # Short description of your site
-description: Quick write-ups and things I think are itneresting
+description: Quick write-ups and things I think are interesting
 
 # --- Navigation bar options --- #
 
@@ -77,7 +77,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "j.rhynorater@gmail.com"
+  email: "j.rhynorater[at]gmail.com"
   github: rhynorater
   twitter: rhynorater
 #  reddit: yourname
