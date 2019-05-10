@@ -8,7 +8,7 @@ My name is Justin Gardner (also known as Rhynorater). I'm a penetration tester f
 I really enjoy mentoring and teaching. If would like assistance getting into the bug bounty or hacking scene, please contact me. I will gladly share with you what little knowledge I have if you prove to me that you are willing to work for it and are not just looking to be spoon fed success. 
 
 ### certiciations and awards
- - The "Exalted" H1-415 2019
+ - "The Exalted" H1-415 2019
  - Offensive Security Certified Professional (OSCP) - June 27th, 2018
 
 
