@@ -13,7 +13,7 @@ I really enjoy mentoring and teaching. If would like assistance getting into the
 
 
 ### papers and publications
- - "CI Knew There Would Be Bugs Here" - [EdOverflow](https://edoverflow.com), [Corben Leo](https://www.corben.io), Justin Gardner (Rhynorater)
+ - ["CI Knew There Would Be Bugs Here"](https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/) - [EdOverflow](https://edoverflow.com), [Corben Leo](https://www.corben.io), Justin Gardner (Rhynorater)
 
  
 
