@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beginners Resources
-subtitle: where to get started in bug bounty
+subtitle: Where to get started in bug bounty
 ---
 One of the questions I get all the time is `How do I get started in bug bounty?` While I really enjoy teaching and mentoring, it is not possible for me to provide tailored guidance for each and every one of you. **I will gladly point you in the right direction, answer questions that you've already researched (but have been unable to find a solution for), and help you to exploit and escalate vulnerabilities.** However, because I care about your success, I will also try to teach you how to teach yourself (which is not an easy thing to do). 
 
@@ -43,6 +43,7 @@ This type of hacker will likely produce impactful vulnerabilities on edge applic
 
 ### The hacker that can do both
 ![Both](https://media.giphy.com/media/QqkA9W8xEjKPC/200.gif)
+<br>
 The hackers that you will see that perform the best are the hackers that can do both. However, this takes a lot of time and energy and experience. In the beginning, I'd recommend you pick one, build a solid foundation in it, and start reporting vulnerabilities. 
 
 
