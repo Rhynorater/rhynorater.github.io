@@ -1,4 +1,5 @@
 ---
+layout:post
 title: Beginners Resources
 subtitle: where to get started in bug bounty
 ---
