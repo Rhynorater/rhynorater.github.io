@@ -44,6 +44,7 @@ This type of hacker will likely produce impactful vulnerabilities on edge applic
 ### The hacker that can do both
 ![Both](https://media.giphy.com/media/QqkA9W8xEjKPC/200.gif)
 <br>
+<br>
 The hackers that you will see that perform the best are the hackers that can do both. However, this takes a lot of time and energy and experience. In the beginning, I'd recommend you pick one, build a solid foundation in it, and start reporting vulnerabilities. 
 
 
