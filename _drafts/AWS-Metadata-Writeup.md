@@ -1,6 +1,6 @@
 Title: AWS Metadata Endpoint - How to not get pwned like Capital One
 
-One of the greatest, yet seemingly unknown, dangers that face any cloud-based application is the deadly combination of an SSRF vulnerability and the AWS Metadata endpoint. As this write up from Brian Krebbs explains, the breach at Capital One was caused by an SSRF vulnerability that was able to reach the AWS Metadata endpoint and extract the temporary security credentials associated with the EC2 instance's IAM Role. These credentials enabled the attacker to access other other Capital One assets in the cloud and the result was that over 100 million credit card applications were compromised. 
+One of the greatest, yet seemingly unknown, dangers that face any cloud-based application is the deadly combination of an SSRF vulnerability and the AWS Metadata endpoint. As [this write up from Brian Krebbs](https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/) explains, the breach at Capital One was caused by an SSRF vulnerability that was able to reach the AWS Metadata endpoint and extract the temporary security credentials associated with the EC2 instance's IAM Role. These credentials enabled the attacker to access other other Capital One assets in the cloud and the result was that over 100 million credit card applications were compromised. 
 
 The purpose of this blog post is to explain the technical details of such a vulnerability and give some helpful suggestions for avoiding a similar situation in any organization. 
 
