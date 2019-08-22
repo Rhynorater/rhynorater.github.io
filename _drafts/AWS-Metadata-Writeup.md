@@ -16,7 +16,7 @@ echo file_get_contents("http://".$_GET['hostname']."/configureIntegration.php");
 
 The code above sends an HTTP request to the hostname specified by the attacker in the "hostname" GET parameter. Logic like this is commonly found in the "Integrations" section of applications. This code is vulnerable to SSRF. Consider the following scenario: 
 There is a sensative service running on the localhost NIC of the vulnerable server. This is emulated by the following configuration:
-[Picture of Setup Sensitive Service]
+![Local Configuration](/img/local_service.png)
 
 The PHP code above is hosted on the webserver that faces the internet. When an attacker discoveres this endpoint, he/she might use the following to grab the data from the internal application:
 ```
@@ -83,7 +83,7 @@ http://A.8.8.8.8.1time.169.254.169.254.1time.repeat.rebind.network/ DNS Rebindin
 And there are many more. The only reliable way to address this issue is through a network level block of this IP.
 
 The easiest way to check the IAM roles associated with each EC2 instance is to navigate to the EC2 Dashboard in AWS and add the column "IAM Instance Profile Name" by clicking the gear in the top right hand corner. Once the IAM role for each EC2 instance is easily visible, it is possible to check these roles to see if they are overly permissive for the what is required of that EC2 instance. 
-[EC2 Dashboard Picture]
+![AWS EC2 Dashboard with IAM Role](/img/AWS_IAM_ProfileName.png)
 
 It is also imperative to understand the pivoting potential of these IAM Roles. If it is possible that an SSRF, XXE, or RCE vulnerability was exploited on any cloud system, the logs for the IAM Role associated with this instance must be thoroughly audited for malicious intent. 
 
