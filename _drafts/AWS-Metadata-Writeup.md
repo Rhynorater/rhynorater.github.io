@@ -16,6 +16,7 @@ echo file_get_contents("http://".$_GET['hostname']."/configureIntegration.php");
 
 The code above sends an HTTP request to the hostname specified by the attacker in the "hostname" GET parameter. Logic like this is commonly found in the "Integrations" section of applications. This code is vulnerable to SSRF. Consider the following scenario: 
 There is a sensative service running on the localhost NIC of the vulnerable server. This is emulated by the following configuration:
+
 ![Local Configuration](/img/local_service.png)
 
 The PHP code above is hosted on the webserver that faces the internet. When an attacker discoveres this endpoint, he/she might use the following to grab the data from the internal application:
