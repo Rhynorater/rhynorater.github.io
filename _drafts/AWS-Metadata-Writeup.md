@@ -1,6 +1,6 @@
 Title: AWS Metadata Endpoint - How to not get pwned like Capital One
 
-One of the greatest, yet seemingly unknown, dangers that face any cloud-based application is the deadly combination of an SSRF vulnerability and the AWS Metadata endpoint. As [this write up from Brian Krebbs](https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/) explains, the breach at Capital One was caused by an SSRF vulnerability that was able to reach the AWS Metadata endpoint and extract the temporary security credentials associated with the EC2 instance's IAM Role. These credentials enabled the attacker to access other other Capital One assets in the cloud and the result was that over 100 million credit card applications were compromised. 
+One of the greatest, yet seemingly unknown, dangers that face any cloud-based application is the deadly combination of an SSRF vulnerability and the AWS Metadata endpoint. As [this write up from Brian Krebbs](https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/) explains, the breach at Capital One was caused by an SSRF vulnerability that was able to reach the AWS Metadata endpoint and extract the temporary security credentials associated with the EC2 instance's IAM Role. These credentials enabled the attacker to access other Capital One assets in the cloud and the result was that over 100 million credit card applications were compromised. 
 
 The purpose of this blog post is to explain the technical details of such a vulnerability and give some helpful suggestions for avoiding a similar situation in any organization. 
 
@@ -15,7 +15,7 @@ echo file_get_contents("http://".$_GET['hostname']."/configureIntegration.php");
 ```
 
 The code above sends an HTTP request to the hostname specified by the attacker in the "hostname" GET parameter. Logic like this is commonly found in the "Integrations" section of applications. This code is vulnerable to SSRF. Consider the following scenario: 
-There is a sensative service running on the localhost NIC of the vulnerable server. This is emulated by the following configuration:
+There is a sensative service running on the loopback interface of the vulnerable server. This is emulated by the following configuration:
 
 ![Local Configuration](/img/local_service.png)
 
@@ -51,9 +51,9 @@ ec2-user@kali:~$ curl 169.254.169.254/latest/meta-data/iam/security-credentials/
 }
 ```
 
-The response contains several things: the AccessKeyId, SecretAccessKey, and the Token for this account. Using these credentials, an attacker can login to AWS and compromise the server and potentially many other assets. In the case of the Capital One breach, these credentials were used to access and S3 bucket which contained millions of records of user information. 
+The response contains several things: the AccessKeyId, SecretAccessKey, and the Token for this account. Using these credentials, an attacker can login to AWS and compromise the server and potentially many other assets. In the case of the Capital One breach, these credentials were used to access an S3 bucket which contained millions of records of user information. 
 
-In summary, the poor implementation of the metadata service in AWS allows for an attacker to easily escalate an SSRF vulnerability to control of many different cloud assets. Other cloud providers like Google Cloud and Microsoft Azure also provide access to a metadata service endpoint but requests to these endpoints require a special header. This prevents most SSRF vulnerabilities from accessing the sensitive data there.
+In summary, the poor implementation of the metadata service in AWS allows for an attacker to easily escalate an SSRF vulnerability to control many different cloud assets. Other cloud providers like Google Cloud and Microsoft Azure also provide access to a metadata service endpoint but requests to these endpoints require a special header. This prevents most SSRF vulnerabilities from accessing the sensitive data there.
 
 ### How to prevent such a vulnerability
 In order to prevent this type of vulnerability from occuring firewall rules will need to be put in place to block off the metadata endpoint. This can be done using the following iptables rule:
