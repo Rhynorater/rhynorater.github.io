@@ -32,7 +32,7 @@ Serving HTTP on 127.0.0.1 port 8081 (http://127.0.0.1:8081/) ...
 ```
 and return the following to the attacker:
 ```
-This is only available on a local NIC
+This is only available on a loopback interface
 ```
 
 Now that the danger of SSRF is clear, let's look at how this vulnerability may be exploited in the context of the Cloud (AWS in particular). 
