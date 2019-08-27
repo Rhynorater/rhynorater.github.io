@@ -35,9 +35,9 @@ and return the following to the attacker:
 This is only available on a loopback interface
 ```
 
-Now that the danger of SSRF is clear, let's look at how this vulnerability may be exploited in the context of the Cloud (AWS in particular). 
+Now that the danger of SSRF is clear, let's look at how this vulnerability may be exploited in the context of the cloud (AWS in particular). 
 
-Due to the dynamic nature of the Cloud, it became necessary that server instances (EC2 for example) have some way to get some basic information about their configuration for the purpose of orienting themselves to the environment in which they were spun up. Out of this need the AWS Metadata endpoint was born. This endpoint (169.254.169.254), when hit from any EC2 instance, will reveal information about the configuration of the particular EC2 instance. There is quite a lot of information available via this endpoint including: hostname, external ip address, metrics, lan information, security groups, and last but not least, the IAM (Identity and Access Management) credentials associated with this EC2 instance. It is possible to retrieve these security credentials by hitting the following url where [ROLE] is the IAM role name:
+Due to the dynamic nature of the cloud, it became necessary that server instances (EC2 for example) have some way to get some basic information about their configuration for the purpose of orienting themselves to the environment in which they were spun up. Out of this need the AWS Metadata endpoint was born. This endpoint (169.254.169.254), when hit from any EC2 instance, will reveal information about the configuration of the particular EC2 instance. There is quite a lot of information available via this endpoint including: hostname, external ip address, metrics, lan information, security groups, and last but not least, the IAM (Identity and Access Management) credentials associated with this EC2 instance. It is possible to retrieve these security credentials by hitting the following url where [ROLE] is the IAM role name:
 ```
 ec2-user@kali:~$ curl 169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE]                                                                 
 {
