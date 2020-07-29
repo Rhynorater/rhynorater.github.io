@@ -15,6 +15,7 @@ baseurl: ""
 
 # Name of website
 title: Rhynorater's InfoSec Blog
+title-img: /img/rhynorater.png
 
 # Short description of your site
 description: Quick write-ups and things I think are interesting
@@ -33,7 +34,6 @@ navbar-links:
       - Github: "https://github.com/rhynorater"
       - HackerOne: "https://hackerone.com/rhynorater"
       - BugCrowd: "https://bugcrowd.com/rhynorater"
-      - SynerComm: "https://www.shellntel.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar

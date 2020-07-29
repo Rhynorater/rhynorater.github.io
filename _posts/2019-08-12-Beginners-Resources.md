@@ -2,6 +2,7 @@
 layout: post
 title: Beginners Resources
 subtitle: Where to get started in bug bounty
+permalink: /Beginners-Resources
 ---
 One of the questions I get all the time is `How do I get started in bug bounty?` While I really enjoy teaching and mentoring, it is not possible for me to provide tailored guidance for each and every one of you. **I will gladly point you in the right direction, answer questions that you've already researched (but have been unable to find a solution for), and help you to exploit and escalate vulnerabilities.** However, because I care about your success, I will also try to teach you how to teach yourself (which is not an easy thing to do). 
 
