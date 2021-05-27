@@ -52,6 +52,7 @@ The hackers that you will see that perform the best are the hackers that can do 
 ## Technical Resources
 In order to learn about all the vulnerabilities that one could find, there are several key resources:
 - [Web Hacking 101 by Pete Yaworski](https://leanpub.com/web-hacking-101)
+- [PortSwigger Academy](https://portswigger.net/web-security)
 - [BugCrowd University](https://www.bugcrowd.com/hackers/bugcrowd-university/)
 - [Hacker101](https://www.hacker101.com/videos)
 - [The Web Application Hacker's Handbook](https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470)
