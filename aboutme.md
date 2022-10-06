@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-My name is Justin Gardner (also known as Rhynorater). I am currently a full-time bug bounty hunter living in Richmond, Virginia (prev. Yokohama, Japan). My secucurity interests encompass everything from web applications hacking (client-side, server-side, and beyond), to 0-day hunting via source code review/reverse engineering, to hardware/IoT devices, to novel security research. 
+My name is Justin Gardner (also known as Rhynorater). I am currently a full-time bug bounty hunter living in Richmond, Virginia (prev. Yokohama, Japan). My secucurity interests encompass everything from web applications hacking, to 0-day hunting via source code review/reverse engineering, to hardware/IoT devices, to novel security research. 
 
 I've been a full-time bounty hunter since March of 2020, and over this time I've competed in nearly every HackerOne Live Hacking Event and deep-dived many private/public HackerOne programs. As a result, I've found over 450 vulnerabilities and reached the top 35 in the HackerOne All-time leaderboard. I previously worked for [SynerComm](https://synercomm.com) as a Penetration Tester and [Veivos](https://www.veivos.com) as an IT Architect. Outside of security, my hobbies are language learning (Japanese: Fluent-ish, Italian: Rusty Intermediate), Volleyball, Jiu-Jitsu, and spending time with my lovely wife Mariah. 
 
