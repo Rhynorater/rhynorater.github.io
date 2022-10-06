@@ -20,7 +20,7 @@ I really enjoy mentoring and teaching. If would like assistance getting into the
  - "2nd Place Winner" H1-2102 2021
  - "Best Team Collaboration" DISTURBANCE H1-2006 2020
  - "The Exalted" H1-415 2019
- - Offensive Security Certified Professional (OSCP) - June 27th, 2018
+ - "Offensive Security Certified Professional (OSCP)" June 27th, 2018
 
 
 ### papers and publications
