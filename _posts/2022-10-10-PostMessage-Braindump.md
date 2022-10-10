@@ -13,7 +13,7 @@ Just as no good web hacker would leave a hidden REST API untested, let's not for
 1. Frans Rosen's postMessage Tracker ([https://github.com/fransr/postMessage-tracker](https://github.com/fransr/postMessage-tracker))
 2. DevTools' "Element -> Event Listener -> message" drop-down. ([https://www.sjoerdlangkemper.nl/2018/05/09/attacking-postmessage-interfaces/](https://www.sjoerdlangkemper.nl/2018/05/09/attacking-postmessage-interfaces/))
 
-Once you've determined that your target page has an event listener, it is time to test it. Luckily for us, this is a White Box endeavor as we've got the JavaScript code. We can proceed to set some breakpoints in our JavaScript debugger (See this article of you dont know how to do this: https://buddy.works/tutorials/debugging-javascript-efficiently-with-chrome-devtools) and send some example postMessages to our victim page using something like:
+Once you've determined that your target page has an event listener, it is time to test it. Luckily for us, this is a White Box endeavor as we've got the JavaScript code. We can proceed to set some breakpoints in our JavaScript debugger (See this article of you dont know how to do this: [https://buddy.works/tutorials/debugging-javascript-efficiently-with-chrome-devtools](https://buddy.works/tutorials/debugging-javascript-efficiently-with-chrome-devtools)) and send some example postMessages to our victim page using something like:
 ```
 let vw = window.open("https://vulnerable.com/postMessageListenerPage");
 vw.postMessage('{}', "*");
