@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PostMessage Braindump
+title: postMessage Braindump
 subtitle: a brief postMessage testing methodology
 permalink: /postMessage-Braindump
 ---
@@ -10,8 +10,8 @@ PostMessage-related bugs have landed me some serious bounties during the past co
 According to the docs, postMessages "safely enables cross-origin communication between Window objects." Whenever we see "cross-origin" as a hacker, our ears should perk up. The communication referred to in the above definition is done in the form of postMessages and Event Listeners. PostMessages are messages sent from the client and Event Listeners are the pieces of code that receive the messages and process them. Sound familiar? It sounds just like a REST API, right? **It may be helpful to consider Event Listeners to be APIs for the browser page that you can trigger from an attacker frame (iframe or window.open Window or otherwise).**
 
 Just as no good web hacker would leave a hidden REST API untested, let's not forget to check for postMessage listeners. A postMessage listener is defined using the `addEventListener("message", (e)=>{})` syntax, however, it is often easier to track them down in the browser using the following two tools:
-1. Frans Rosen's postMessage Tracker (https://github.com/fransr/postMessage-tracker)
-2. DevTools' "Element -> Event Listener -> message" drop-down. (https://www.sjoerdlangkemper.nl/2018/05/09/attacking-postmessage-interfaces/)
+1. Frans Rosen's postMessage Tracker ([https://github.com/fransr/postMessage-tracker](https://github.com/fransr/postMessage-tracker))
+2. DevTools' "Element -> Event Listener -> message" drop-down. ([https://www.sjoerdlangkemper.nl/2018/05/09/attacking-postmessage-interfaces/](https://www.sjoerdlangkemper.nl/2018/05/09/attacking-postmessage-interfaces/))
 
 Once you've determined that your target page has an event listener, it is time to test it. Luckily for us, this is a White Box endeavor as we've got the JavaScript code. We can proceed to set some breakpoints in our JavaScript debugger (See this article of you dont know how to do this: https://buddy.works/tutorials/debugging-javascript-efficiently-with-chrome-devtools) and send some example postMessages to our victim page using something like:
 ```
