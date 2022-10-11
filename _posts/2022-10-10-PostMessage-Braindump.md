@@ -5,7 +5,7 @@ subtitle: a brief postMessage testing methodology
 permalink: /postMessage-Braindump
 ---
 ## postMessages
-PostMessage-related bugs have landed me some serious bounties during the past couple live hacking events. Here is a quick summary of what you need to know about postMessage:
+postMessage-related bugs have landed me some serious bounties during the past couple live hacking events. Here is a quick summary of what you need to know about postMessage:
 
 According to the docs, postMessages "safely enables cross-origin communication between Window objects." Whenever we see "cross-origin" as a hacker, our ears should perk up. The communication referred to in the above definition is done in the form of postMessages and Event Listeners. PostMessages are messages sent from the client and Event Listeners are the pieces of code that receive the messages and process them. Sound familiar? It sounds just like a REST API, right? **It may be helpful to consider Event Listeners to be APIs for the browser page that you can trigger from an attacker frame (iframe or window.open Window or otherwise).**
 
