@@ -127,17 +127,11 @@ So far we have utilized the DPC more heavily than expected. After not having vis
 Total healthcare expenses each month for my wife and me:
 
 ```
-
 Zion Health Healthshare: $185
-
 Local DPC Subscription: $118
-
 Zion Health DPC Discount: -$35
-
 ------------------------------
-
 Total: $268
-
 ```
 
 Total savings: ~$750 a month.
