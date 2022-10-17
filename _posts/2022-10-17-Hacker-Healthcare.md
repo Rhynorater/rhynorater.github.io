@@ -4,9 +4,7 @@ title: Hacker Healthcare
 subtitle: Solving healthcare as a full-time bug bounty hunter in the US 
 permalink: /Hacker-Healthcare
 ---
-
 ## Hacker Healthcare - USA
-
 I'd say that one of the most common problems that prevent successful bug bounty hunters from quitting their day job is that, in the USA, your healthcare is nearly always tied to your job. As such, when you quit your job to become self-employed, you will have to figure out how to get healthcare for yourself and your family. If you are in a single-income household, this gets increasingly difficult as you cannot rely on the healthcare provided by your spouse's job, and must come up with an alternative solution. While the US Government has attempted to make healthcare easier over the past years with the launching of healthcare.gov, I think most people would still agree that the state of healthcare in the US for solopreneurs is quite challenging. As such, I thought it would be helpful to release this blog post explaining how I solved the healthcare problem for my family and me - after many hours of research.
 
   
