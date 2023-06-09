@@ -25,6 +25,7 @@ description: Quick write-ups and things I think are interesting
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Critical Thinking Podcast: "https://l.ctbb.show/rhynoraterpod"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
